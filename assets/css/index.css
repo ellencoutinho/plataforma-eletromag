@@ -1,0 +1,132 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9e9ee2;
+    height: 5vh;
+    color: #ffffffd8;
+    padding: 1em;
+    font-size: 1vw;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 1%;
+    background-color: #544e7120;
+}
+
+section {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: #ffffff89;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+li {
+    margin-bottom: 1em;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #ffffffee;
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #aaa;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+p {
+    margin-bottom: 20px; /* espaçamento inferior para separar o enunciado dos botões */
+}
+
+textarea {
+    display: block;
+    padding: 0.5rem;
+    width: 40%;
+    height: 2.5rem;
+    box-sizing: border-box;
+    margin: 0 auto ;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+button {
+    background-color: #befcbf; /* cor de fundo verde */
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px; /* espaçamento entre os botões */
+    margin-bottom: 10px;
+    flex: 1; /* Cada botão vai ocupar o mesmo espaço flexível no contêiner */
+    margin: 0 1rem; /* Espaçamento entre os botões */
+    max-width: 30%;
+}
+
+button:hover {
+    background-color: #befcbf6e; /* cor de fundo verde mais escura ao passar o mouse */
+}
+
+
+button.dica {
+    background-color: #fee9ac; /* cor de fundo amarelo para o botão de dica */
+    color: #333; /* cor do texto */
+}
+
+button.dica:hover {
+    background-color: #fee9ac73; /* cor de fundo amarelo escuro mais escura ao passar o mouse */
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    cursor: pointer;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center; 
+}
+
+
+.dicas-container {
+    flex-grow: 1; /* ocupa o espaço restante */
+    margin-top: 10px; /* espaçamento superior */
+    padding: 10px; /* espaçamento interno */
+    border: 1px solid #ddd; /* borda para separar visualmente as dicas */
+    border-radius: 5px; /* borda arredondada */
+    overflow-y: auto; /* scroll quando ultrapassar a altura máxima */
+    max-height: 200px;
+}
+
+
+
+
